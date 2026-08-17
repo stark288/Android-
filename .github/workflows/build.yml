@@ -15,7 +15,7 @@ jobs:
           chmod +x gradlew
           ./gradlew assembleRelease
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: AnonymityToolkit
           path: app/build/outputs/apk/release/*.apk
